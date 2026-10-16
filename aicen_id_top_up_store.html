@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="id" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aicen.id - Top Up Game & PPOB Terpercaya</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        neonCyan: '#00f3ff',
+                        neonPink: '#ff007f',
+                        darkBg: '#0b0f19',
+                        darkCard: '#111827',
+                        darkBorder: '#1f293d',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'neon-cyan': '0 0 20px rgba(0, 243, 255, 0.35)',
+                        'neon-pink': '0 0 20px rgba(255, 0, 127, 0.35)',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0b0f19;
+            color: #f3f4f6;
+        }
+        .glow-text-cyan {
+            text-shadow: 0 0 10px rgba(0, 243, 255, 0.6);
+        }
+        .glow-text-pink {
+            text-shadow: 0 0 10px rgba(255, 0, 127, 0.6);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #0b0f19;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #1f293d;
+            border-radius: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #00f3ff;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between custom-scrollbar bg-darkBg selection:bg-neonCyan selection:text-black">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-40 bg-darkBg/90 backdrop-blur-md border-b border-darkBorder">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="https://aicen.id" class="flex items-center space-x-2 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-neonCyan to-neonPink p-0.5 shadow-neon-cyan transition-transform group-hover:scale-105">
+                    <div class="w-full h-full bg-darkBg rounded-[10px] flex items-center justify-center">
+                        <i class="fa-solid font-black text-transparent bg-clip-text bg-gradient-to-r from-neonCyan to-neonPink text-xl">A</i>
+                    </div>
+                </div>
+                <span class="text-2xl font-extrabold tracking-wider text-white">aicen<span class="text-neonCyan">.id</span></span>
+            </a>
+
+            <!-- Navigation Menu -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#games" class="hover:text-neonCyan transition-colors flex items-center space-x-2">
+                    <i class="fa-solid fa-gamepad text-neonCyan"></i>
+                    <span>Layanan Game</span>
+                </a>
+                <a href="#pulsa-data" class="hover:text-neonCyan transition-colors flex items-center space-x-2">
+                    <i class="fa-solid fa-mobile-screen text-neonPink"></i>
+                    <span>Pulsa & Data</span>
+                </a>
+                <a href="#pln" class="hover:text-neonCyan transition-colors flex items-center space-x-2">
+                    <i class="fa-solid fa-bolt text-yellow-400"></i>
+                    <span>Token Listrik</span>
+                </a>
+                <a href="#order-form" class="hover:text-neonCyan transition-colors flex items-center space-x-2">
+                    <i class="fa-solid fa-magnifying-glass text-indigo-400"></i>
+                    <span>Cek Pesanan</span>
+                </a>
+                <a href="#contact" class="hover:text-neonCyan transition-colors flex items-center space-x-2">
+                    <i class="fa-solid fa-headset text-emerald-400"></i>
+                    <span>Hubungi Kami</span>
+                </a>
+            </nav>
+
+            <!-- Quick Action Button -->
+            <div class="hidden md:block">
+                <a href="#order-form" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-neonCyan to-blue-600 text-darkBg font-bold text-sm shadow-neon-cyan hover:opacity-90 transition duration-300">
+                    Top Up Sekarang
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Nav -->
+        <div id="mobile-menu" class="hidden md:hidden bg-darkCard border-b border-darkBorder px-4 pt-2 pb-6 space-y-3">
+            <a href="#games" class="block py-2 text-gray-200 hover:text-neonCyan"><i class="fa-solid fa-gamepad w-6 text-neonCyan"></i> Layanan Game</a>
+            <a href="#pulsa-data" class="block py-2 text-gray-200 hover:text-neonCyan"><i class="fa-solid fa-mobile-screen w-6 text-neonPink"></i> Pulsa & Data</a>
+            <a href="#pln" class="block py-2 text-gray-200 hover:text-neonCyan"><i class="fa-solid fa-bolt w-6 text-yellow-400"></i> Token Listrik</a>
+            <a href="#order-form" class="block py-2 text-gray-200 hover:text-neonCyan"><i class="fa-solid fa-magnifying-glass w-6 text-indigo-400"></i> Cek Pesanan</a>
+            <a href="#contact" class="block py-2 text-gray-200 hover:text-neonCyan"><i class="fa-solid fa-headset w-6 text-emerald-400"></i> Hubungi Kami</a>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Hero Banner section -->
+        <section class="relative overflow-hidden pt-8 pb-16 lg:py-20 border-b border-darkBorder/50">
+            <!-- Background Glow Elements -->
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-neonCyan/10 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-neonPink/10 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Hero Content Left -->
+                    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                        <div class="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-darkCard border border-neonCyan/30 text-neonCyan text-xs font-semibold tracking-wider uppercase">
+                            <span class="w-2 h-2 rounded-full bg-neonCyan animate-ping"></span>
+                            <span>Platform Top Up Game & PPOB Super Cepat</span>
+                        </div>
+                        
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight text-white">
+                            Top Up Murah, Instan & <span class="text-transparent bg-clip-text bg-gradient-to-r from-neonCyan via-blue-400 to-neonPink">Terpercaya</span> di <span class="underline decoration-neonCyan">aicen.id</span>
+                        </h1>
+                        
+                        <p class="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0">
+                            Nikmati kemudahan transaksi Mobile Legends Diamond, Weekly Diamond Pass (WDP), Pulsa, Paket Data, hingga Token Listrik PLN dengan harga termurah dan proses serba otomatis 24 jam!
+                        </p>
+
+                        <!-- Feature Badges -->
+                        <div class="grid grid-cols-3 gap-4 pt-4 border-t border-darkBorder max-w-md mx-auto lg:mx-0">
+                            <div class="text-center lg:text-left">
+                                <div class="text-neonCyan font-bold text-lg sm:text-xl"><i class="fa-solid fa-bolt mr-1"></i> Quick</div>
+                                <div class="text-gray-500 text-xs">Proses 1-3 Detik</div>
+                            </div>
+                            <div class="text-center lg:text-left">
+                                <div class="text-neonPink font-bold text-lg sm:text-xl"><i class="fa-solid fa-shield-halved mr-1"></i> Safe</div>
+                                <div class="text-gray-500 text-xs">100% Legal & Aman</div>
+                            </div>
+                            <div class="text-center lg:text-left">
+                                <div class="text-yellow-400 font-bold text-lg sm:text-xl"><i class="fa-solid fa-headset mr-1"></i> 24/7</div>
+                                <div class="text-gray-500 text-xs">Layanan Nonstop</div>
+                            </div>
+                        </div>
+
+                        <!-- CTA Buttons -->
+                        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-3 sm:space-y-0 sm:space-x-4 pt-2">
+                            <a href="#order-form" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-gradient-to-r from-neonCyan to-blue-600 text-darkBg font-extrabold shadow-neon-cyan hover:shadow-cyan-500/50 transition duration-300 text-center">
+                                Order Diamond Sekarang
+                            </a>
+                            <a href="https://wa.me/6285138537454" target="_blank" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-darkCard border border-darkBorder hover:border-neonPink text-white font-bold transition duration-300 text-center flex items-center justify-center space-x-2">
+                                <i class="fa-brands fa-whatsapp text-emerald-400 text-lg"></i>
+                                <span>CS WhatsApp</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Hero Visual Right (Angela Collector Showcase) -->
+                    <div class="lg:col-span-5 flex justify-center">
+                        <div class="relative group w-full max-w-md">
+                            <div class="absolute -inset-1 bg-gradient-to-r from-neonCyan to-neonPink rounded-3xl blur-lg opacity-70 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+                            
+                            <div class="relative bg-darkCard rounded-3xl overflow-hidden border border-darkBorder p-3 shadow-2xl">
+                                <!-- Angela Banner Visual (Custom SVG Concept Render) -->
+                                <div class="relative h-96 w-full rounded-2xl overflow-hidden bg-gradient-to-b from-indigo-950 via-purple-950 to-darkBg flex flex-col justify-between p-6">
+                                    <!-- Background SVG Artwork / Skin Showcase Art -->
+                                    <svg class="absolute inset-0 w-full h-full opacity-40 object-cover pointer-events-none" viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="200" cy="180" r="140" stroke="url(#cyan-grad)" stroke-width="2" stroke-dasharray="6 6"/>
+                                        <path d="M50 300 L200 80 L350 300" stroke="url(#pink-grad)" stroke-width="3" fill="none" />
+                                        <circle cx="200" cy="180" r="80" fill="#00f3ff" opacity="0.15"/>
+                                        <defs>
+                                            <linearGradient id="cyan-grad" x1="0" y1="0" x2="400" y2="500">
+                                                <stop offset="0%" stop-color="#00f3ff"/>
+                                                <stop offset="100%" stop-color="#ff007f"/>
+                                            </linearGradient>
+                                            <linearGradient id="pink-grad" x1="0" y1="0" x2="0" y2="500">
+                                                <stop offset="0%" stop-color="#ff007f"/>
+                                                <stop offset="100%" stop-color="#00f3ff"/>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+
+                                    <!-- Skin Badge Overlay -->
+                                    <div class="relative z-10 flex justify-between items-center">
+                                        <span class="px-3 py-1 rounded-full bg-gradient-to-r from-amber-500 to-yellow-300 text-black font-black text-xs tracking-wider shadow-lg uppercase">
+                                            <i class="fa-solid fa-crown mr-1"></i> MLBB Collector
+                                        </span>
+                                        <span class="text-xs text-neonCyan font-mono bg-darkBg/80 px-2.5 py-1 rounded-lg border border-neonCyan/30">
+                                            Special Promo
+                                        </span>
+                                    </div>
+
+                                    <!-- Angela Avatar / Visual Illustration -->
+                                    <div class="relative z-10 my-auto text-center py-4">
+                                        <div class="w-28 h-28 mx-auto rounded-full bg-gradient-to-tr from-neonPink via-purple-500 to-neonCyan p-1 shadow-neon-pink mb-3">
+                                            <div class="w-full h-full rounded-full bg-darkBg flex items-center justify-center overflow-hidden">
+                                                <i class="fa-solid fa-wand-magic-sparkles text-5xl text-transparent bg-clip-text bg-gradient-to-r from-neonPink to-neonCyan"></i>
+                                            </div>
+                                        </div>
+                                        <h3 class="text-2xl font-black text-white glow-text-pink">ANGELA "FLORAL ELF"</h3>
+                                        <p class="text-xs text-gray-300 mt-1">Collector Series Mobile Legends</p>
+                                    </div>
+
+                                    <!-- Interactive Banner Card Footer -->
+                                    <div class="relative z-10 bg-darkBg/90 backdrop-blur-md p-3.5 rounded-xl border border-darkBorder flex items-center justify-between">
+                                        <div>
+                                            <div class="text-xs text-gray-400">Weekly Diamond Pass</div>
+                                            <div class="text-sm font-bold text-neonCyan">Bonus +210 Diamonds</div>
+                                        </div>
+                                        <a href="#order-form" onclick="selectGame('mlbb')" class="px-3 py-1.5 rounded-lg bg-neonPink hover:bg-pink-600 text-white font-bold text-xs transition">
+                                            Klaim Promo
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Service Grid & Transaction Form Section -->
+        <section id="order-form" class="py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <h2 class="text-3xl font-black text-white sm:text-4xl">
+                    Pilih Layanan & <span class="text-neonCyan">Top Up Sekarang</span>
+                </h2>
+                <p class="text-gray-400 mt-2 text-sm sm:text-base">
+                    Isi data akun, pilih item impianmu, tentukan pembayaran, dan transaksi langsung diproses otomatis!
+                </p>
+            </div>
+
+            <!-- Category Selector Tabs -->
+            <div class="flex justify-center mb-8 overflow-x-auto pb-2 scrollbar-none">
+                <div class="bg-darkCard p-1.5 rounded-2xl border border-darkBorder flex space-x-2">
+                    <button id="tab-game" onclick="switchCategory('game')" class="px-5 py-2.5 rounded-xl font-bold text-sm transition-all duration-300 bg-gradient-to-r from-neonCyan to-blue-600 text-darkBg shadow-neon-cyan">
+                        <i class="fa-solid fa-gamepad mr-2"></i> Top Up Game
+                    </button>
+                    <button id="tab-pulsa" onclick="switchCategory('pulsa')" class="px-5 py-2.5 rounded-xl font-bold text-sm transition-all duration-300 text-gray-400 hover:text-white">
+                        <i class="fa-solid fa-mobile-screen mr-2"></i> Pulsa & Data
+                    </button>
+                    <button id="tab-pln" onclick="switchCategory('pln')" class="px-5 py-2.5 rounded-xl font-bold text-sm transition-all duration-300 text-gray-400 hover:text-white">
+                        <i class="fa-solid fa-bolt mr-2"></i> Token Listrik
+                    </button>
+                </div>
+            </div>
+
+            <!-- Transaction Interactive Form Layout -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                
+                <!-- STEP 1: Choose Game / Provider (Left Column) -->
+                <div class="lg:col-span-4 space-y-6">
+                    
+                    <!-- Game Selection Box -->
+                    <div id="section-game-select" class="bg-darkCard rounded-2xl p-6 border border-darkBorder">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <span class="w-8 h-8 rounded-lg bg-neonCyan/20 text-neonCyan font-black flex items-center justify-center text-sm border border-neonCyan/40">1</span>
+                            <h3 class="text-lg font-bold text-white">Pilih Game Popular</h3>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-3">
+                            <!-- Game 1: Mobile Legends -->
+                            <button onclick="selectGame('mlbb')" id="game-btn-mlbb" class="game-btn active-game border-2 border-neonCyan bg-neonCyan/10 p-3 rounded-xl flex flex-col items-center text-center transition">
+                                <div class="w-12 h-12 rounded-lg bg-indigo-900/80 mb-2 flex items-center justify-center border border-neonCyan">
+                                    <i class="fa-solid fa-shield-cat text-2xl text-neonCyan"></i>
+                                </div>
+                                <span class="font-bold text-xs text-white">Mobile Legends</span>
+                                <span class="text-[10px] text-neonCyan mt-0.5">MLBB Diamond</span>
+                            </button>
+
+                            <!-- Game 2: Free Fire -->
+                            <button onclick="selectGame('ff')" id="game-btn-ff" class="game-btn border-2 border-darkBorder hover:border-gray-600 bg-darkBg/50 p-3 rounded-xl flex flex-col items-center text-center transition">
+                                <div class="w-12 h-12 rounded-lg bg-amber-900/80 mb-2 flex items-center justify-center border border-amber-500/40">
+                                    <i class="fa-solid fa-crosshair text-2xl text-amber-400"></i>
+                                </div>
+                                <span class="font-bold text-xs text-white">Free Fire</span>
+                                <span class="text-[10px] text-gray-400 mt-0.5">FF Diamonds</span>
+                            </button>
+
+                            <!-- Game 3: PUBG Mobile -->
+                            <button onclick="selectGame('pubg')" id="game-btn-pubg" class="game-btn border-2 border-darkBorder hover:border-gray-600 bg-darkBg/50 p-3 rounded-xl flex flex-col items-center text-center transition">
+                                <div class="w-12 h-12 rounded-lg bg-emerald-900/80 mb-2 flex items-center justify-center border border-emerald-500/40">
+                                    <i class="fa-solid fa-person-rifle text-2xl text-emerald-400"></i>
+                                </div>
+                                <span class="font-bold text-xs text-white">PUBG Mobile</span>
+                                <span class="text-[10px] text-gray-400 mt-0.5">Unknown Cash (UC)</span>
+                            </button>
+
+                            <!-- Game 4: Genshin Impact -->
+                            <button onclick="selectGame('genshin')" id="game-btn-genshin" class="game-btn border-2 border-darkBorder hover:border-gray-600 bg-darkBg/50 p-3 rounded-xl flex flex-col items-center text-center transition">
+                                <div class="w-12 h-12 rounded-lg bg-sky-900/80 mb-2 flex items-center justify-center border border-sky-500/40">
+                                    <i class="fa-solid fa-gem text-2xl text-sky-400"></i>
+                                </div>
+                                <span class="font-bold text-xs text-white">Genshin Impact</span>
+                                <span class="text-[10px] text-gray-400 mt-0.5">Genesis Crystals</span>
+                            </button>
+
+                            <!-- Game 5: Honor of Kings -->
+                            <button onclick="selectGame('hok')" id="game-btn-hok" class="game-btn border-2 border-darkBorder hover:border-gray-600 bg-darkBg/50 p-3 rounded-xl flex flex-col items-center text-center transition">
+                                <div class="w-12 h-12 rounded-lg bg-red-900/80 mb-2 flex items-center justify-center border border-red-500/40">
+                                    <i class="fa-solid fa-crown text-2xl text-red-400"></i>
+                                </div>
+                                <span class="font-bold text-xs text-white">Honor of Kings</span>
+                                <span class="text-[10px] text-gray-400 mt-0.5">Tokens HOK</span>
+                            </button>
+
+                            <!-- Game 6: Valorant -->
+                            <button onclick="selectGame('valorant')" id="game-btn-valorant" class="game-btn border-2 border-darkBorder hover:border-gray-600 bg-darkBg/50 p-3 rounded-xl flex flex-col items-center text-center transition">
+                                <div class="w-12 h-12 rounded-lg bg-rose-900/80 mb-2 flex items-center justify-center border border-rose-500/40">
+                                    <i class="fa-solid fa-gun text-2xl text-rose-400"></i>
+                                </div>
+                                <span class="font-bold text-xs text-white">Valorant</span>
+                                <span class="text-[10px] text-gray-400 mt-0.5">Valorant Points</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- PPOB / Pulsa Operator Selection (Hidden by default) -->
+                    <div id="section-ppob-select" class="hidden bg-darkCard rounded-2xl p-6 border border-darkBorder">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <span class="w-8 h-8 rounded-lg bg-neonPink/20 text-neonPink font-black flex items-center justify-center text-sm border border-neonPink/40">1</span>
+                            <h3 id="ppob-title" class="text-lg font-bold text-white">Pilih Operator</h3>
+                        </div>
+                        <div id="operator-list" class="grid grid-cols-2 gap-3">
+                            <!-- Operator options populated dynamically -->
+                        </div>
+                    </div>
+
+                    <!-- STEP 2: Input Account Details -->
+                    <div class="bg-darkCard rounded-2xl p-6 border border-darkBorder">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <span class="w-8 h-8 rounded-lg bg-neonCyan/20 text-neonCyan font-black flex items-center justify-center text-sm border border-neonCyan/40">2</span>
+                            <h3 id="account-step-title" class="text-lg font-bold text-white">Lengkapi Data Akun</h3>
+                        </div>
+
+                        <form id="account-form" onsubmit="return false;" class="space-y-4">
+                            <div id="game-id-fields" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                <div>
+                                    <label class="block text-xs font-semibold text-gray-400 mb-1">User ID</label>
+                                    <input type="number" id="input-userid" placeholder="Contoh: 12345678" class="w-full bg-darkBg border border-darkBorder focus:border-neonCyan rounded-xl px-3.5 py-2.5 text-sm text-white focus:outline-none transition">
+                                </div>
+                                <div id="zone-id-container">
+                                    <label class="block text-xs font-semibold text-gray-400 mb-1">Zone ID / Server</label>
+                                    <input type="number" id="input-zoneid" placeholder="Contoh: 2024" class="w-full bg-darkBg border border-darkBorder focus:border-neonCyan rounded-xl px-3.5 py-2.5 text-sm text-white focus:outline-none transition">
+                                </div>
+                            </div>
+
+                            <div id="phone-number-field" class="hidden">
+                                <label id="phone-label" class="block text-xs font-semibold text-gray-400 mb-1">Nomor Handphone</label>
+                                <input type="tel" id="input-phone" placeholder="Contoh: 085138537454" class="w-full bg-darkBg border border-darkBorder focus:border-neonCyan rounded-xl px-3.5 py-2.5 text-sm text-white focus:outline-none transition">
+                            </div>
+
+                            <p class="text-[11px] text-gray-400 leading-relaxed">
+                                <i class="fa-solid fa-circle-info text-neonCyan mr-1"></i> Pastikan data ID / Nomor yang diinputkan sudah benar agar pengisian berjalan lancar.
+                            </p>
+                        </form>
+                    </div>
+
+                </div>
+
+                <!-- STEP 3 & 4: Item Selection & Payment Methods (Right Column) -->
+                <div class="lg:col-span-8 space-y-6">
+                    
+                    <!-- ITEM SELECTION GRID -->
+                    <div class="bg-darkCard rounded-2xl p-6 border border-darkBorder">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center space-x-3">
+                                <span class="w-8 h-8 rounded-lg bg-neonCyan/20 text-neonCyan font-black flex items-center justify-center text-sm border border-neonCyan/40">3</span>
+                                <h3 class="text-lg font-bold text-white">Pilih Nominal Nominal / Paket</h3>
+                            </div>
+                            <span class="text-xs text-neonPink font-semibold animate-pulse" id="item-category-tag">MLBB Diamonds & Pass</span>
+                        </div>
+
+                        <!-- Special WDP Banner Category for MLBB -->
+                        <div id="wdp-special-section" class="mb-6 p-4 rounded-xl bg-gradient-to-r from-purple-900/40 via-darkBg to-indigo-950 border border-purple-500/30">
+                            <div class="flex items-center justify-between mb-3">
+                                <h4 class="text-sm font-bold text-purple-300 flex items-center">
+                                    <i class="fa-solid fa-star text-yellow-400 mr-2"></i> Weekly Diamond Pass (WDP) Bundles
+                                </h4>
+                                <span class="text-[10px] bg-purple-900/80 text-purple-200 px-2 py-0.5 rounded border border-purple-400/30">Best Value</span>
+                            </div>
+                            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3" id="wdp-grid">
+                                <!-- WDP Cards populated here -->
+                            </div>
+                        </div>
+
+                        <!-- Main Item Options Grid -->
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3.5" id="item-grid">
+                            <!-- Item Cards populated dynamically -->
+                        </div>
+                    </div>
+
+                    <!-- PAYMENT METHODS -->
+                    <div class="bg-darkCard rounded-2xl p-6 border border-darkBorder">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <span class="w-8 h-8 rounded-lg bg-neonCyan/20 text-neonCyan font-black flex items-center justify-center text-sm border border-neonCyan/40">4</span>
+                            <h3 class="text-lg font-bold text-white">Pilih Metode Pembayaran</h3>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                            <!-- DANA -->
+                            <div onclick="selectPayment('DANA')" id="pay-dana" class="payment-card cursor-pointer border-2 border-darkBorder hover:border-blue-400 bg-darkBg/50 p-3.5 rounded-xl flex items-center justify-between transition">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-10 h-10 rounded-lg bg-blue-600/20 flex items-center justify-center font-black text-blue-400 text-xs border border-blue-500/30">
+                                        DANA
+                                    </div>
+                                    <div>
+                                        <div class="text-xs font-bold text-white">E-Wallet DANA</div>
+                                        <div class="text-[10px] text-gray-400">Bebas Biaya Admin</div>
+                                    </div>
+                                </div>
+                                <i class="fa-regular fa-circle-check pay-check text-gray-600"></i>
+                            </div>
+
+                            <!-- GoPay -->
+                            <div onclick="selectPayment('GoPay')" id="pay-gopay" class="payment-card cursor-pointer border-2 border-darkBorder hover:border-emerald-400 bg-darkBg/50 p-3.5 rounded-xl flex items-center justify-between transition">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-10 h-10 rounded-lg bg-emerald-600/20 flex items-center justify-center font-black text-emerald-400 text-xs border border-emerald-500/30">
+                                        GOPAY
+                                    </div>
+                                    <div>
+                                        <div class="text-xs font-bold text-white">GoPay Instant</div>
+                                        <div class="text-[10px] text-gray-400">Proses Otomatis</div>
+                                    </div>
+                                </div>
+                                <i class="fa-regular fa-circle-check pay-check text-gray-600"></i>
+                            </div>
+
+                            <!-- ShopeePay -->
+                            <div onclick="selectPayment('ShopeePay')" id="pay-shopeepay" class="payment-card cursor-pointer border-2 border-darkBorder hover:border-orange-400 bg-darkBg/50 p-3.5 rounded-xl flex items-center justify-between transition">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-10 h-10 rounded-lg bg-orange-600/20 flex items-center justify-center font-black text-orange-400 text-xs border border-orange-500/30">
+                                        SHOPEE
+                                    </div>
+                                    <div>
+                                        <div class="text-xs font-bold text-white">ShopeePay</div>
+                                        <div class="text-[10px] text-gray-400">QRIS / Direct</div>
+                                    </div>
+                                </div>
+                                <i class="fa-regular fa-circle-check pay-check text-gray-600"></i>
+                            </div>
+
+                            <!-- Bank BRI -->
+                            <div onclick="selectPayment('BRI')" id="pay-bri" class="payment-card cursor-pointer border-2 border-darkBorder hover:border-blue-500 bg-darkBg/50 p-3.5 rounded-xl flex items-center justify-between transition">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-10 h-10 rounded-lg bg-blue-700/20 flex items-center justify-center font-black text-blue-300 text-xs border border-blue-600/30">
+                                        BRI
+                                    </div>
+                                    <div>
+                                        <div class="text-xs font-bold text-white">Bank BRI</div>
+                                        <div class="text-[10px] text-gray-400">Transfer Virtual Account</div>
+                                    </div>
+                                </div>
+                                <i class="fa-regular fa-circle-check pay-check text-gray-600"></i>
+                            </div>
+
+                            <!-- Bank BCA -->
+                            <div onclick="selectPayment('BCA')" id="pay-bca" class="payment-card cursor-pointer border-2 border-darkBorder hover:border-sky-400 bg-darkBg/50 p-3.5 rounded-xl flex items-center justify-between transition sm:col-span-2">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-10 h-10 rounded-lg bg-sky-600/20 flex items-center justify-center font-black text-sky-400 text-xs border border-sky-500/30">
+                                        BCA
+                                    </div>
+                                    <div>
+                                        <div class="text-xs font-bold text-white">Bank BCA</div>
+                                        <div class="text-[10px] text-gray-400">Transfer Bank & VA 24 Jam</div>
+                                    </div>
+                                </div>
+                                <i class="fa-regular fa-circle-check pay-check text-gray-600"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SUMMARY & ORDER SUBMIT BAR -->
+                    <div class="bg-gradient-to-r from-darkCard via-darkBg to-darkCard rounded-2xl p-6 border border-neonCyan/40 shadow-neon-cyan/20 flex flex-col md:flex-row items-center justify-between gap-4">
+                        <div>
+                            <div class="text-xs text-gray-400 uppercase tracking-wider font-semibold">Ringkasan Pembelian</div>
+                            <div class="text-xl font-black text-white mt-0.5">
+                                <span id="summary-item-name" class="text-neonCyan">Pilih Item Terlebih Dahulu</span>
+                            </div>
+                            <div class="text-xs text-gray-400 mt-1">
+                                Metode: <span id="summary-payment" class="text-white font-bold">-</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4 w-full md:w-auto">
+                            <div class="text-right hidden sm:block">
+                                <div class="text-xs text-gray-400">Total Tagihan:</div>
+                                <div id="summary-price" class="text-2xl font-black text-neonPink glow-text-pink">Rp 0</div>
+                            </div>
+                            <button onclick="processCheckout()" class="w-full md:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-neonCyan via-blue-500 to-neonPink text-darkBg font-black text-base shadow-neon-pink hover:opacity-90 active:scale-95 transition duration-200">
+                                BELI SEKARANG <i class="fa-solid fa-bolt ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Customer Service & Contact Info Section -->
+        <section id="contact" class="py-12 bg-darkCard/50 border-t border-darkBorder">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    
+                    <!-- Contact Item 1 -->
+                    <div class="bg-darkCard p-6 rounded-2xl border border-darkBorder flex items-center space-x-4 hover:border-neonCyan/50 transition">
+                        <div class="w-12 h-12 rounded-xl bg-neonCyan/10 border border-neonCyan/30 flex items-center justify-center text-neonCyan text-xl shrink-0">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xs text-gray-400 uppercase font-semibold">WhatsApp Support</h4>
+                            <a href="https://wa.me/6285138537454" target="_blank" class="text-sm font-bold text-white hover:text-neonCyan transition">
+                                +62 851-3853-7454
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Item 2 -->
+                    <div class="bg-darkCard p-6 rounded-2xl border border-darkBorder flex items-center space-x-4 hover:border-neonPink/50 transition">
+                        <div class="w-12 h-12 rounded-xl bg-neonPink/10 border border-neonPink/30 flex items-center justify-center text-neonPink text-xl shrink-0">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xs text-gray-400 uppercase font-semibold">Email Customer Care</h4>
+                            <a href="mailto:aicen28426@gmail.com" class="text-sm font-bold text-white hover:text-neonPink transition">
+                                aicen28426@gmail.com
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Item 3 -->
+                    <div class="bg-darkCard p-6 rounded-2xl border border-darkBorder flex items-center space-x-4 hover:border-indigo-500/50 transition">
+                        <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-xl shrink-0">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xs text-gray-400 uppercase font-semibold">Website Resmi</h4>
+                            <a href="https://aicen.id" class="text-sm font-bold text-white hover:text-indigo-400 transition">
+                                https://aicen.id
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-darkBg border-t border-darkBorder py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:flex sm:justify-between sm:items-center space-y-4 sm:space-y-0">
+            <div>
+                <span class="text-lg font-black text-white">aicen<span class="text-neonCyan">.id</span></span>
+                <p class="text-xs text-gray-500 mt-1">© 2026 aicen.id Store. All Rights Reserved. Platform Top Up Tercepat & Terpercaya.</p>
+            </div>
+            <div class="flex justify-center space-x-6 text-sm text-gray-400">
+                <a href="https://aicen.id" class="hover:text-neonCyan transition">Syarat & Ketentuan</a>
+                <a href="https://aicen.id" class="hover:text-neonCyan transition">Kebijakan Privasi</a>
+                <a href="https://wa.me/6285138537454" class="hover:text-neonCyan transition">Bantuan</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- TRANSACTION INVOICE SIMULATION MODAL -->
+    <div id="invoice-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
+        <div class="bg-darkCard border border-neonCyan/50 w-full max-w-md rounded-2xl overflow-hidden shadow-2xl transform transition-all">
+            
+            <!-- Modal Header -->
+            <div class="bg-gradient-to-r from-neonCyan to-blue-600 p-4 text-darkBg font-extrabold flex justify-between items-center">
+                <span class="flex items-center text-base"><i class="fa-solid fa-receipt mr-2"></i> Struk Transaksi Simulasi</span>
+                <button onclick="closeInvoiceModal()" class="text-darkBg hover:text-white text-xl font-bold">&times;</button>
+            </div>
+
+            <!-- Modal Content -->
+            <div class="p-6 space-y-4">
+                <div class="text-center pb-3 border-b border-darkBorder">
+                    <div class="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 flex items-center justify-center mx-auto mb-2 text-xl">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <h3 class="text-lg font-black text-white">Pesanan Siap Diproses!</h3>
+                    <p class="text-xs text-gray-400 mt-0.5">Kode Transaksi: <span id="inv-code" class="font-mono text-neonCyan">AIC-20260312-99</span></p>
+                </div>
+
+                <!-- Invoice Details List -->
+                <div class="space-y-2.5 text-xs">
+                    <div class="flex justify-between py-1 border-b border-darkBorder/50">
+                        <span class="text-gray-400">Website:</span>
+                        <span class="font-bold text-neonCyan">https://aicen.id</span>
+                    </div>
+                    <div class="flex justify-between py-1 border-b border-darkBorder/50">
+                        <span class="text-gray-400">Layanan / Game:</span>
+                        <span id="inv-service" class="font-bold text-white">Mobile Legends</span>
+                    </div>
+                    <div class="flex justify-between py-1 border-b border-darkBorder/50">
+                        <span class="text-gray-400">Tujuan (ID / No):</span>
+                        <span id="inv-target" class="font-bold text-white">12345678 (2024)</span>
+                    </div>
+                    <div class="flex justify-between py-1 border-b border-darkBorder/50">
+                        <span class="text-gray-400">Nominal Item:</span>
+                        <span id="inv-item" class="font-bold text-neonCyan">Weekly Diamond Pass (WDP 1x)</span>
+                    </div>
+                    <div class="flex justify-between py-1 border-b border-darkBorder/50">
+                        <span class="text-gray-400">Metode Bayar:</span>
+                        <span id="inv-payment" class="font-bold text-yellow-400">DANA</span>
+                    </div>
+                    <div class="flex justify-between py-1 border-b border-darkBorder/50">
+                        <span class="text-gray-400">Status Pembayaran:</span>
+                        <span class="font-bold text-emerald-400 uppercase">Menunggu Pembayaran</span>
+                    </div>
+                    <div class="flex justify-between py-2 bg-darkBg px-3 rounded-lg border border-darkBorder text-sm">
+                        <span class="font-bold text-gray-300">Total Transfer:</span>
+                        <span id="inv-total" class="font-black text-neonPink text-base">Rp 28.500</span>
+                    </div>
+                </div>
+
+                <!-- Payment Instruction & Actions -->
+                <div class="pt-2 space-y-2">
+                    <button onclick="confirmSimulatedPayment()" class="w-full py-3 bg-neonCyan text-darkBg font-black rounded-xl hover:bg-cyan-400 transition text-sm">
+                        Selesaikan Pembayaran Simulasi
+                    </button>
+                    <a id="inv-wa-link" href="#" target="_blank" class="w-full py-2.5 bg-darkBg border border-emerald-500/50 text-emerald-400 font-bold rounded-xl hover:bg-emerald-950/30 transition text-xs flex items-center justify-center space-x-2">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Konfirmasi via WhatsApp (+6285138537454)</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- CUSTOM NOTIFICATION CONTAINER -->
+    <div id="toast" class="fixed bottom-5 right-5 z-50 bg-neonPink text-white px-5 py-3 rounded-xl shadow-2xl font-bold text-xs flex items-center space-x-2 transition-all duration-300 transform translate-y-20 opacity-0 pointer-events-none">
+        <i class="fa-solid fa-circle-info"></i>
+        <span id="toast-msg">Pesan Notifikasi</span>
+    </div>
+
+    <!-- JAVASCRIPT APP LOGIC -->
+    <script>
+        // DATA STORES FOR ALL PRODUCTS ACCORDING TO SPECIFICATIONS
+        const DATA = {
+            mlbb: {
+                name: "Mobile Legends",
+                type: "game_id",
+                wdp: [
+                    { id: "wdp1", name: "Weekly Diamond Pass (WDP 1x)", price: 28500, badge: "Populer" },
+                    { id: "wdp2", name: "Weekly Diamond Pass (WDP 2x)", price: 56000, badge: "Hemat" },
+                    { id: "wdp3", name: "Weekly Diamond Pass (WDP 3x)", price: 83500, badge: "Sultan" },
+                    { id: "wdp5", name: "Weekly Diamond Pass (WDP 5x)", price: 139000, badge: "Super Value" }
+                ],
+                items: [
+                    { id: "ml_3", name: "3 Diamond", price: 1500 },
+                    { id: "ml_5", name: "5 Diamond", price: 2200 },
+                    { id: "ml_12", name: "12 Diamond", price: 4000 },
+                    { id: "ml_28", name: "28 Diamond", price: 9000 },
+                    { id: "ml_59", name: "59 Diamond", price: 17500 },
+                    { id: "ml_85", name: "85 Diamond", price: 24000 },
+                    { id: "ml_170", name: "170 Diamond", price: 47000 },
+                    { id: "ml_240", name: "240 Diamond", price: 65000 },
+                    { id: "ml_296", name: "296 Diamond", price: 82000 },
+                    { id: "ml_408", name: "408 Diamond", price: 112000 },
+                    { id: "ml_568", name: "568 Diamond", price: 154000 },
+                    { id: "ml_875", name: "875 Diamond", price: 235000 },
+                    { id: "ml_2010", name: "2010 Diamond", price: 520000 },
+                    { id: "ml_4830", name: "4830 Diamond", price: 1250000 },
+                    { id: "ml_9288", name: "9288 Diamond", price: 2400000 }
+                ]
+            },
+            ff: {
+                name: "Free Fire",
+                type: "game_id_single",
+                items: [
+                    { id: "ff_5", name: "5 Diamond", price: 1000 },
+                    { id: "ff_12", name: "12 Diamond", price: 2000 },
+                    { id: "ff_50", name: "50 Diamond", price: 8000 },
+                    { id: "ff_70", name: "70 Diamond", price: 10000 },
+                    { id: "ff_140", name: "140 Diamond", price: 20000 },
+                    { id: "ff_355", name: "355 Diamond", price: 50000 },
+                    { id: "ff_720", name: "720 Diamond", price: 100000 },
+                    { id: "ff_1440", name: "1440 Diamond", price: 200000 }
+                ]
+            },
+            pubg: {
+                name: "PUBG Mobile",
+                type: "game_id_single",
+                items: [
+                    { id: "pubg_35", name: "35 UC", price: 8000 },
+                    { id: "pubg_74", name: "74 UC", price: 16000 },
+                    { id: "pubg_221", name: "221 UC", price: 48000 },
+                    { id: "pubg_770", name: "770 UC", price: 160000 },
+                    { id: "pubg_2010", name: "2010 UC", price: 400000 }
+                ]
+            },
+            genshin: {
+                name: "Genshin Impact",
+                type: "game_id_server",
+                items: [
+                    { id: "gi_60", name: "60 Genesis Crystals", price: 16000 },
+                    { id: "gi_300", name: "300+30 Crystals", price: 79000 },
+                    { id: "gi_980", name: "980+110 Crystals", price: 245000 },
+                    { id: "gi_1980", name: "1980+260 Crystals", price: 490000 },
+                    { id: "gi_bless", name: "Blessing of Welkin Moon", price: 79000 }
+                ]
+            },
+            hok: {
+                name: "Honor of Kings",
+                type: "game_id_single",
+                items: [
+                    { id: "hok_17", name: "17 Tokens", price: 3500 },
+                    { id: "hok_88", name: "88 Tokens", price: 16000 },
+                    { id: "hok_257", name: "257 Tokens", price: 48000 },
+                    { id: "hok_432", name: "432 Tokens", price: 80000 },
+                    { id: "hok_865", name: "865 Tokens", price: 160000 }
+                ]
+            },
+            valorant: {
+                name: "Valorant Points",
+                type: "game_id_single",
+                items: [
+                    { id: "val_125", name: "125 VP", price: 15000 },
+                    { id: "val_420", name: "420 VP", price: 50000 },
+                    { id: "val_700", name: "700 VP", price: 80000 },
+                    { id: "val_1375", name: "1375 VP", price: 150000 },
+                    { id: "val_2400", name: "2400 VP", price: 250000 }
+                ]
+            },
+            pulsa: {
+                name: "Pulsa All Operator",
+                type: "phone",
+                operators: ["Telkomsel", "Indosat", "XL", "Tri", "Smartfren"],
+                items: [
+                    { id: "p_5k", name: "Pulsa 5.000", price: 7000 },
+                    { id: "p_10k", name: "Pulsa 10.000", price: 12000 },
+                    { id: "p_25k", name: "Pulsa 25.000", price: 26500 },
+                    { id: "p_50k", name: "Pulsa 50.000", price: 51500 },
+                    { id: "p_100k", name: "Pulsa 100.000", price: 101000 }
+                ]
+            },
+            data: {
+                name: "Paket Data Internet",
+                type: "phone",
+                operators: ["Telkomsel", "Indosat", "XL", "Tri", "Smartfren"],
+                items: [
+                    { id: "d_1gb", name: "Data 1 GB (3 Hari)", price: 10000 },
+                    { id: "d_3gb", name: "Data 3 GB (7 Hari)", price: 20000 },
+                    { id: "d_10gb", name: "Data 10 GB (30 Hari)", price: 50000 },
+                    { id: "d_25gb", name: "Data 25 GB (30 Hari)", price: 90000 },
+                    { id: "d_50gb", name: "Data 50 GB Unlimited", price: 150000 }
+                ]
+            },
+            pln: {
+                name: "Token Listrik PLN",
+                type: "pln_meter",
+                items: [
+                    { id: "pln_20", name: "Token PLN 20.000", price: 21500 },
+                    { id: "pln_50", name: "Token PLN 50.000", price: 51500 },
+                    { id: "pln_100", name: "Token PLN 100.000", price: 101500 },
+                    { id: "pln_200", name: "Token PLN 200.000", price: 201500 },
+                    { id: "pln_500", name: "Token PLN 500.000", price: 501500 },
+                    { id: "pln_1m", name: "Token PLN 1.000.000", price: 1001500 }
+                ]
+            }
+        };
+
+        // CURRENT USER SELECTION STATE
+        let currentState = {
+            category: 'game', // game | pulsa | pln
+            selectedKey: 'mlbb',
+            operator: 'Telkomsel',
+            selectedItem: null,
+            selectedPayment: null
+        };
+
+        // DOM Elements
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        // Toggle Mobile Navigation
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Initialize App on Load
+        window.onload = function() {
+            renderFormFields();
+            selectGame('mlbb');
+        };
+
+        // CATEGORY SWITCHER (Game / Pulsa / PLN)
+        function switchCategory(cat) {
+            currentState.category = cat;
+            
+            // Tab Buttons UI
+            const tabGame = document.getElementById('tab-game');
+            const tabPulsa = document.getElementById('tab-pulsa');
+            const tabPln = document.getElementById('tab-pln');
+
+            const inactiveClass = "px-5 py-2.5 rounded-xl font-bold text-sm transition-all duration-300 text-gray-400 hover:text-white";
+            const activeClass = "px-5 py-2.5 rounded-xl font-bold text-sm transition-all duration-300 bg-gradient-to-r from-neonCyan to-blue-600 text-darkBg shadow-neon-cyan";
+
+            tabGame.className = cat === 'game' ? activeClass : inactiveClass;
+            tabPulsa.className = cat === 'pulsa' ? activeClass : inactiveClass;
+            tabPln.className = cat === 'pln' ? activeClass : inactiveClass;
+
+            const secGameSelect = document.getElementById('section-game-select');
+            const secPpobSelect = document.getElementById('section-ppob-select');
+
+            if (cat === 'game') {
+                secGameSelect.classList.remove('hidden');
+                secPpobSelect.classList.add('hidden');
+                selectGame('mlbb');
+            } else if (cat === 'pulsa') {
+                secGameSelect.classList.add('hidden');
+                secPpobSelect.classList.remove('hidden');
+                document.getElementById('ppob-title').innerText = 'Pilih Pulsa atau Data';
+                renderPpobOperators('pulsa');
+            } else if (cat === 'pln') {
+                secGameSelect.classList.add('hidden');
+                secPpobSelect.classList.add('hidden');
+                selectService('pln');
+            }
+        }
+
+        // RENDER OPERATOR SELECTION FOR PPOB
+        function renderPpobOperators(type) {
+            const listContainer = document.getElementById('operator-list');
+            listContainer.innerHTML = `
+                <button onclick="selectService('pulsa')" class="border-2 border-neonCyan bg-neonCyan/10 p-3 rounded-xl flex items-center space-x-3 text-left">
+                    <i class="fa-solid fa-mobile-button text-neonCyan text-xl"></i>
+                    <div>
+                        <div class="text-xs font-bold text-white">Pulsa Reguler</div>
+                        <div class="text-[10px] text-neonCyan">All Operator</div>
+                    </div>
+                </button>
+                <button onclick="selectService('data')" class="border-2 border-darkBorder hover:border-gray-600 bg-darkBg/50 p-3 rounded-xl flex items-center space-x-3 text-left">
+                    <i class="fa-solid fa-wifi text-neonPink text-xl"></i>
+                    <div>
+                        <div class="text-xs font-bold text-white">Paket Data</div>
+                        <div class="text-[10px] text-gray-400">Kuota Internet</div>
+                    </div>
+                </button>
+            `;
+            selectService('pulsa');
+        }
+
+        // SELECT GAME SERVICE
+        function selectGame(gameKey) {
+            currentState.selectedKey = gameKey;
+            
+            // Highlight active game card
+            document.querySelectorAll('.game-btn').forEach(btn => {
+                btn.classList.remove('border-neonCyan', 'bg-neonCyan/10');
+                btn.classList.add('border-darkBorder', 'bg-darkBg/50');
+            });
+
+            const activeBtn = document.getElementById(`game-btn-${gameKey}`);
+            if (activeBtn) {
+                activeBtn.classList.remove('border-darkBorder', 'bg-darkBg/50');
+                activeBtn.classList.add('border-neonCyan', 'bg-neonCyan/10');
+            }
+
+            renderFormFields();
+            renderItems();
+        }
+
+        // SELECT GENERIC SERVICE (PLN/Pulsa/Data)
+        function selectService(key) {
+            currentState.selectedKey = key;
+            renderFormFields();
+            renderItems();
+        }
+
+        // DYNAMIC FORM FIELD SWITCHING (ID vs Zone vs Phone vs PLN Meter)
+        function renderFormFields() {
+            const dataObj = DATA[currentState.selectedKey];
+            const gameFields = document.getElementById('game-id-fields');
+            const zoneContainer = document.getElementById('zone-id-container');
+            const phoneField = document.getElementById('phone-number-field');
+            const phoneLabel = document.getElementById('phone-label');
+            const stepTitle = document.getElementById('account-step-title');
+
+            if (dataObj.type === 'game_id') {
+                gameFields.classList.remove('hidden');
+                zoneContainer.classList.remove('hidden');
+                phoneField.classList.add('hidden');
+                stepTitle.innerText = "Lengkapi Data Akun Game";
+            } else if (dataObj.type === 'game_id_single' || dataObj.type === 'game_id_server') {
+                gameFields.classList.remove('hidden');
+                zoneContainer.classList.add('hidden');
+                phoneField.classList.add('hidden');
+                stepTitle.innerText = "Input User ID / Server ID";
+            } else if (dataObj.type === 'phone') {
+                gameFields.classList.add('hidden');
+                phoneField.classList.remove('hidden');
+                phoneLabel.innerText = "Nomor HP Pembeli / Penerima";
+                stepTitle.innerText = "Input Nomor Handphone";
+            } else if (dataObj.type === 'pln_meter') {
+                gameFields.classList.add('hidden');
+                phoneField.classList.remove('hidden');
+                phoneLabel.innerText = "Nomor Meter / ID Pelanggan PLN";
+                stepTitle.innerText = "Input ID Meteran PLN";
+            }
+        }
+
+        // RENDER ITEMS (INCLUDING MLBB SPECIFIC WDP SECTION)
+        function renderItems() {
+            const dataObj = DATA[currentState.selectedKey];
+            const wdpSection = document.getElementById('wdp-special-section');
+            const itemGrid = document.getElementById('item-grid');
+            const tagLabel = document.getElementById('item-category-tag');
+
+            tagLabel.innerText = dataObj.name;
+            currentState.selectedItem = null;
+            updateSummary();
+
+            // Handle WDP Bundles for MLBB
+            if (currentState.selectedKey === 'mlbb' && dataObj.wdp) {
+                wdpSection.classList.remove('hidden');
+                const wdpGrid = document.getElementById('wdp-grid');
+                wdpGrid.innerHTML = dataObj.wdp.map(item => `
+                    <div onclick="selectItem('${item.id}', '${item.name}', ${item.price}, true)" id="item-card-${item.id}" class="item-card cursor-pointer bg-darkBg/80 p-3 rounded-xl border border-purple-500/30 hover:border-neonCyan transition text-center relative group">
+                        <span class="absolute -top-2 right-2 bg-gradient-to-r from-neonPink to-purple-600 text-white font-extrabold text-[9px] px-2 py-0.5 rounded-full uppercase tracking-widest shadow">
+                            ${item.badge}
+                        </span>
+                        <i class="fa-solid fa-crown text-yellow-400 text-lg mb-1"></i>
+                        <div class="text-xs font-bold text-white">${item.name}</div>
+                        <div class="text-xs font-black text-neonCyan mt-1">Rp ${item.price.toLocaleString('id-ID')}</div>
+                    </div>
+                `).join('');
+            } else {
+                wdpSection.classList.add('hidden');
+            }
+
+            // Handle Standard Diamond / Token Items Grid
+            itemGrid.innerHTML = dataObj.items.map(item => `
+                <div onclick="selectItem('${item.id}', '${item.name}', ${item.price}, false)" id="item-card-${item.id}" class="item-card cursor-pointer bg-darkBg/50 p-3.5 rounded-xl border border-darkBorder hover:border-neonCyan transition flex flex-col justify-between">
+                    <div>
+                        <div class="text-xs font-bold text-white">${item.name}</div>
+                        <div class="text-[10px] text-gray-400 mt-0.5">Instant Delivery</div>
+                    </div>
+                    <div class="text-xs font-black text-neonCyan mt-3 pt-2 border-t border-darkBorder">
+                        Rp ${item.price.toLocaleString('id-ID')}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // ITEM SELECTION ACTION
+        function selectItem(id, name, price, isWdp) {
+            currentState.selectedItem = { id, name, price };
+
+            // Remove previous active state styling
+            document.querySelectorAll('.item-card').forEach(card => {
+                card.classList.remove('border-neonCyan', 'bg-neonCyan/10', 'border-neonPink', 'bg-neonPink/10');
+                card.classList.add('border-darkBorder');
+            });
+
+            // Highlight selected card
+            const selectedCard = document.getElementById(`item-card-${id}`);
+            if (selectedCard) {
+                selectedCard.classList.remove('border-darkBorder');
+                selectedCard.classList.add(isWdp ? 'border-neonPink' : 'border-neonCyan', isWdp ? 'bg-neonPink/10' : 'bg-neonCyan/10');
+            }
+
+            updateSummary();
+        }
+
+        // PAYMENT METHOD SELECTION
+        function selectPayment(method) {
+            currentState.selectedPayment = method;
+
+            document.querySelectorAll('.payment-card').forEach(card => {
+                card.classList.remove('border-neonCyan', 'bg-neonCyan/10');
+                card.querySelector('.pay-check').classList.remove('text-neonCyan', 'fa-solid', 'fa-circle-check');
+                card.querySelector('.pay-check').classList.add('text-gray-600', 'fa-regular', 'fa-circle-check');
+            });
+
+            const payMap = { 'DANA': 'pay-dana', 'GoPay': 'pay-gopay', 'ShopeePay': 'pay-shopeepay', 'BRI': 'pay-bri', 'BCA': 'pay-bca' };
+            const selectedPayCard = document.getElementById(payMap[method]);
+
+            if (selectedPayCard) {
+                selectedPayCard.classList.add('border-neonCyan', 'bg-neonCyan/10');
+                const checkIcon = selectedPayCard.querySelector('.pay-check');
+                checkIcon.classList.remove('text-gray-600', 'fa-regular');
+                checkIcon.classList.add('text-neonCyan', 'fa-solid', 'fa-circle-check');
+            }
+
+            updateSummary();
+        }
+
+        // UPDATE SUMMARY BOTTOM BAR
+        function updateSummary() {
+            const summaryItem = document.getElementById('summary-item-name');
+            const summaryPayment = document.getElementById('summary-payment');
+            const summaryPrice = document.getElementById('summary-price');
+
+            if (currentState.selectedItem) {
+                summaryItem.innerText = currentState.selectedItem.name;
+                summaryPrice.innerText = `Rp ${currentState.selectedItem.price.toLocaleString('id-ID')}`;
+            } else {
+                summaryItem.innerText = 'Pilih Item Terlebih Dahulu';
+                summaryPrice.innerText = 'Rp 0';
+            }
+
+            summaryPayment.innerText = currentState.selectedPayment || '-';
+        }
+
+        // CHECKOUT & INVOICE MODAL LOGIC
+        function processCheckout() {
+            const dataObj = DATA[currentState.selectedKey];
+            let targetId = '';
+
+            // Validation Check
+            if (dataObj.type === 'game_id') {
+                const uid = document.getElementById('input-userid').value;
+                const zid = document.getElementById('input-zoneid').value;
+                if (!uid || !zid) {
+                    showToast('Harap isi User ID & Zone ID terlebih dahulu!');
+                    return;
+                }
+                targetId = `${uid} (${zid})`;
+            } else if (dataObj.type === 'game_id_single' || dataObj.type === 'game_id_server') {
+                const uid = document.getElementById('input-userid').value;
+                if (!uid) {
+                    showToast('Harap masukan ID Game anda!');
+                    return;
+                }
+                targetId = uid;
+            } else {
+                const phone = document.getElementById('input-phone').value;
+                if (!phone) {
+                    showToast('Harap isi Nomor Handphone / Meteran PLN!');
+                    return;
+                }
+                targetId = phone;
+            }
+
+            if (!currentState.selectedItem) {
+                showToast('Pilih nominal item terlebih dahulu!');
+                return;
+            }
+
+            if (!currentState.selectedPayment) {
+                showToast('Pilih metode pembayaran!');
+                return;
+            }
+
+            // Populate Modal Invoice
+            const randomCode = 'AIC-' + Math.floor(100000 + Math.random() * 900000);
+            document.getElementById('inv-code').innerText = randomCode;
+            document.getElementById('inv-service').innerText = dataObj.name;
+            document.getElementById('inv-target').innerText = targetId;
+            document.getElementById('inv-item').innerText = currentState.selectedItem.name;
+            document.getElementById('inv-payment').innerText = currentState.selectedPayment;
+            document.getElementById('inv-total').innerText = `Rp ${currentState.selectedItem.price.toLocaleString('id-ID')}`;
+
+            // Generate WhatsApp Link
+            const waText = `Halo admin aicen.id, saya ingin konfirmasi pesanan:%0A- Kode: ${randomCode}%0A- Layanan: ${dataObj.name}%0A- ID/No: ${targetId}%0A- Item: ${currentState.selectedItem.name}%0A- Bayar via: ${currentState.selectedPayment}%0A- Total: Rp ${currentState.selectedItem.price.toLocaleString('id-ID')}`;
+            document.getElementById('inv-wa-link').href = `https://wa.me/6285138537454?text=${waText}`;
+
+            // Show Modal
+            document.getElementById('invoice-modal').classList.remove('hidden');
+        }
+
+        function closeInvoiceModal() {
+            document.getElementById('invoice-modal').classList.add('hidden');
+        }
+
+        function confirmSimulatedPayment() {
+            showToast('Simulasi Berhasil! Pesanan diproses otomatis.');
+            closeInvoiceModal();
+        }
+
+        // CUSTOM TOAST NOTIFICATION
+        function showToast(msg) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toast-msg').innerText = msg;
+            toast.classList.remove('translate-y-20', 'opacity-0', 'pointer-events-none');
+            
+            setTimeout(() => {
+                toast.classList.add('translate-y-20', 'opacity-0', 'pointer-events-none');
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
